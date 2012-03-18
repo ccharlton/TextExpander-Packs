@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>Subversion (SVN)</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>svn:clean</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2012-01-02T16:53:24Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Delete all .svn folders</string>
+			<key>modificationDate</key>
+			<date>2012-03-18T08:36:35Z</date>
+			<key>plainText</key>
+			<string>find ./ -name ".svn" | xargs rm -Rf</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>E1760690-0005-4BB9-A9E1-AAF22DDA5B85</string>
+		</dict>
+	</array>
+</dict>
+</plist>

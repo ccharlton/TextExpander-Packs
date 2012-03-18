@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>Shell Commands</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>files:loop</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2012-01-02T17:03:59Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Loop through files</string>
+			<key>modificationDate</key>
+			<date>2012-03-18T08:37:48Z</date>
+			<key>plainText</key>
+			<string>for $file in $(cd a; find / -type -f); do diff a/$file b/$file &gt; $a/$file.diff; done</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>FE22B4D9-487C-4971-A0F3-B319B102728C</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>network:toggle</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2012-01-02T17:00:53Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Toggle network interface connection</string>
+			<key>modificationDate</key>
+			<date>2012-03-18T08:37:23Z</date>
+			<key>plainText</key>
+			<string>ifconfig en0 down
+ifconfig en0 up</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>162E017C-D04A-4E6D-8A3C-77ED39DE45B9</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ip:get</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2012-01-02T17:00:05Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Get this machine's network IP address</string>
+			<key>modificationDate</key>
+			<date>2012-03-18T08:37:16Z</date>
+			<key>plainText</key>
+			<string>ifconfig | grep inet</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>6C57722D-8273-44F2-8341-6095848E1861</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>network:list</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2012-01-02T16:59:27Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Get IP addresses of devices on a network</string>
+			<key>modificationDate</key>
+			<date>2012-03-18T08:37:09Z</date>
+			<key>plainText</key>
+			<string>ifconfig</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>3D762C90-8205-4F02-A7C8-F0E457B1D177</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>uncompress</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-01-02T16:58:02Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Uncompress file</string>
+			<key>lastUsed</key>
+			<date>2012-03-17T04:13:44Z</date>
+			<key>modificationDate</key>
+			<date>2012-03-17T04:21:53Z</date>
+			<key>plainText</key>
+			<string>tar -xzvf %fill:file%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>2BFBB2F3-E1F9-4AF8-B301-3A96B3484D6A</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>compress</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-01-02T16:55:59Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Compress files</string>
+			<key>lastUsed</key>
+			<date>2012-03-17T04:22:39Z</date>
+			<key>modificationDate</key>
+			<date>2012-03-17T04:25:09Z</date>
+			<key>plainText</key>
+			<string>tar -czf %fill:newfile%.tar.gz %fill:targetfiles%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>DF50293A-57AC-450E-B276-9198AB77ECE3</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ssh:host:revoke</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2012-01-02T16:54:44Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>SSH revoke key known host</string>
+			<key>modificationDate</key>
+			<date>2012-03-18T08:37:40Z</date>
+			<key>plainText</key>
+			<string>ssh-keygen -R %fill:hostname%</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>FE1D9A61-E64D-415B-A891-4A63BEEBA32D</string>
+		</dict>
+	</array>
+</dict>
+</plist>

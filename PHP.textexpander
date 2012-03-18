@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>PHP</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>pear:install</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2011-12-31T01:35:07Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Intall PHP Pear extension</string>
+			<key>modificationDate</key>
+			<date>2012-03-18T08:35:06Z</date>
+			<key>plainText</key>
+			<string>pear install Console_Table</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>48B8579E-361A-4EEC-A18D-9FAF4459FE47</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>php:code:mysql:convert:tables</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-16T06:18:04Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2012-03-16T06:18:04Z</date>
+			<key>plainText</key>
+			<string>&lt;?php
+$tables = db_query('SHOW TABLE STATUS');
+while ($table = db_fetch_array($tables)) {
+  if ($table['Engine'] == 'MyISAM') {
+    db_query('ALTER TABLE {%s} ENGINE = InnoDB', $table['Name']);
+  }
+}
+?&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>BA9DB47A-92B4-4C7F-BBBE-0A6CE13203E3</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>php:includepath</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-16T05:37:19Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Check PHP include path via command line</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T05:37:44Z</date>
+			<key>plainText</key>
+			<string>php -c /path/to/php.ini -r 'echo get_include_path()."\n";'</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>A45D49BC-9994-472D-88C9-29F5BFF4E871</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>php:ini</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-16T05:35:44Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>List PHP ini config files</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T05:36:06Z</date>
+			<key>plainText</key>
+			<string>php --ini</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>F310B795-ACFA-40E6-B41A-AEE35DFC5E06</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pear:where</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-16T05:34:22Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Find wear PEAR include files are located</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T05:34:22Z</date>
+			<key>plainText</key>
+			<string>pear config-get php_dir</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>DDC46E52-14E1-40E2-87D4-CF633B2CA572</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pear:version</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-16T05:33:54Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Get PEAR version</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T05:34:18Z</date>
+			<key>plainText</key>
+			<string>pear version</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>6718AE5C-9DEC-4D5A-9ECF-A8804403B0B7</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>php:code:info</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-16T04:15:45Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Output PHP info</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T04:25:02Z</date>
+			<key>plainText</key>
+			<string>&lt;?php
+
+// Show all information, defaults to INFO_ALL
+phpinfo();
+
+?&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>1B2FB360-8380-4EF7-B335-FC32A2D11F5D</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>php:ini:disable</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-16T03:32:05Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Disable PHP module or ini file</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T03:33:35Z</date>
+			<key>plainText</key>
+			<string>cd /etc/php.d/ &amp;&amp; mv %fill:filename%.{ini,disable}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>67FE9144-D776-4995-92A4-272C4FDF04E1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>php:ini:security</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-16T03:30:10Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>PHP security.ini (template)</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T03:53:37Z</date>
+			<key>plainText</key>
+			<string># Standard PHP security
+##################
+
+# Hide PHP
+expose_php=Off
+
+# Hide errors
+display_errors=Off
+
+# Log errors
+log_errors=On
+error_log=/var/log/httpd/php_scripts_error.log
+
+# Turn off Remote Code Execution
+allow_url_fopen=Off
+allow_url_include=Off
+
+# PHP 5.3.x or higher
+magic_quotes_gpc=Off
+
+# Resource Control (DoS Control)
+# set in seconds
+max_execution_time =  30
+max_input_time = 30
+memory_limit = 128M
+
+# Control POST size
+#post_max_size=1K
+
+
+# Higher security
+##################
+
+# Disallow file uploads
+#file_uploads=Off
+# Or limit file uploads
+#upload_max_filesize=1M
+
+# Enable SQL Safe Mode
+#sql.safe_mode=On
+
+# Disabling Dangerous PHP Functions
+# disable_functions =exec,passthru,shell_exec,system,proc_open,popen,curl_exec,curl_multi_exec,parse_ini_file,show_source
+
+# PHP Fastcgi / CGI - cgi.force_redirect Directive
+; Enable cgi.force_redirect for security reasons in a typical *Apache+PHP-CGI/FastCGI* setup
+cgi.force_redirect=On
+
+; Limits the PHP process from accessing files outside
+; of specifically designated directories such as /var/www/html/
+#open_basedir="/var/www/html/"
+; ------------------------------------
+; Multiple dirs example
+; open_basedir="/home/httpd/vhost/cyberciti.biz/html/:/home/httpd/vhost/nixcraft.com/html/:/home/httpd/vhost/theos.in/html/"
+; ------------------------------------
+ 
+# Session Path
+;session.save_path="/var/lib/php/session"
+; Set the temporary directory used for storing files when doing file upload
+;upload_tmp_dir="/var/lib/php/session"</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>5BA32DAF-53B7-470D-B6D6-C118B3E6FF87</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>php:modules</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-01-02T17:02:32Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>List PHP modules installed</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T03:31:29Z</date>
+			<key>plainText</key>
+			<string>php -m</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>3ED4586B-EB85-420F-8E56-3D4CFD91737F</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>php:info</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-01-02T17:02:31Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Display PHP configuration &amp; settings</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T03:31:43Z</date>
+			<key>plainText</key>
+			<string>php -i</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>B6F50BF2-2C56-43E0-B5E6-81F999FCF920</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>php:version</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-01-02T17:02:03Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Get PHP version</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T03:31:48Z</date>
+			<key>plainText</key>
+			<string>php -v</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>D62477DE-D20F-432D-BC5E-077F70E1AD73</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>php:code:timeago</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2011-12-31T02:14:48Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Date - time ago</string>
+			<key>modificationDate</key>
+			<date>2012-03-18T08:35:55Z</date>
+			<key>plainText</key>
+			<string>function date_time_ago($timestamp){
+  $difference = time() - $timestamp;
+  $periods = array("second", "minute", "hour", "day", "week", "month", "years", "decade");
+  $lengths = array("60","60","24","7","4.35","12","10");
+  for($j = 0; $difference &gt;= $lengths[$j]; $j++) {
+  $difference /= $lengths[$j];
+  $difference = round($difference);
+  if($difference != 1) $periods[$j].= "s";
+  $text = "$difference $periods[$j] ago";
+  return $text;
+}
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>A3114A06-C803-4307-B37F-2985139CA92A</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>MySQL</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>mysql:repair</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-16T06:19:33Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Repaid all MySQL tables</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T06:19:33Z</date>
+			<key>plainText</key>
+			<string>mysqlrepair</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>D2365D3D-47ED-4C34-95DD-774C0E40CBD6</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>mysql:repair:table</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-16T06:18:52Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Repair MySQL table</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T06:19:46Z</date>
+			<key>plainText</key>
+			<string>REPAIR TABLE %fill:table%;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>E9654AAB-AE9F-494B-8768-8A663EE7CA01</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>mysql:check</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-16T06:15:35Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Database maintenance; check &amp; optimize MySQL tables</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T06:15:35Z</date>
+			<key>plainText</key>
+			<string>mysqlcheck -o -A -p</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>0F011D24-35BC-4D3E-BFDE-4E67931FF3C7</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>mysql:db:new</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-16T06:06:52Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Create new MySQL database </string>
+			<key>modificationDate</key>
+			<date>2012-03-16T06:07:37Z</date>
+			<key>plainText</key>
+			<string>CREATE DATABASE %fill:database%;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>64C2BF50-BA52-4F83-840A-2AC1D6B5CB75</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>mysql:import:file</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-16T06:03:30Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Import data from external file into a specific database</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T06:06:35Z</date>
+			<key>plainText</key>
+			<string>mysql -u %fill:username% -p -h %fill:hostname% %fill:datbasename% &lt; %fill:file%.sql</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>ABB3CF52-951D-471F-ADF8-B36B82AC612C</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>mysql:conf:backup</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-16T04:44:31Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Backup MySQL config</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T04:44:55Z</date>
+			<key>plainText</key>
+			<string>cp -p /etc/my.cnf /etc/my.cnf.bak</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>E31CF1DF-0BA7-4311-A61C-C266D174687D</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>mysql:report</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-16T04:24:08Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Run mysqlreport</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T04:24:08Z</date>
+			<key>plainText</key>
+			<string>perl mysqlreport --user %fill:mysqlusername% --password %fill:password%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>42E482B5-1B33-4B01-B0A0-A4BB8DE86FA4</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>mysql:report:download</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-16T04:21:06Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Download mysqlreport</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T04:21:22Z</date>
+			<key>plainText</key>
+			<string>wget hackmysql.com/scripts/mysqlreport</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>9BEB2AD5-FA91-4580-8187-0CE1E11DC113</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>mysql:user:privelages</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-16T04:13:08Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>List privileges granted to a MySQL user</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T04:13:08Z</date>
+			<key>plainText</key>
+			<string>SELECT * FROM mysql.user WHERE User='%fill:username%';</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>0A9D4DEF-2E24-4521-9100-12BDD7287DDB</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>mysql:grant:safe</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-14T00:02:09Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>MySQL GRANT (Drupal; safe)</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T04:58:03Z</date>
+			<key>plainText</key>
+			<string>GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, INDEX, ALTER, LOCK TABLES, CREATE TEMPORARY TABLES ON `%fill:database%`.* TO '%fill:username%'@%'fill:hostname%' IDENTIFIED BY '%fill:password%'; FLUSH PRIVILEGES;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>8C981931-9034-4800-B998-36623945C4D6</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>mysql:grant:all</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-14T00:00:36Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>MySQL GRANT ALL Privelages</string>
+			<key>modificationDate</key>
+			<date>2012-03-14T00:03:49Z</date>
+			<key>plainText</key>
+			<string>GRANT ALL ON %fill:database%.* TO %fill:username%@%fill:hostname% IDENTIFIED BY '%fill:password%'; FLUSH PRIVILEGES;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>AB79C050-5CEE-4A3C-A1F2-526BFDFB4DE6</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>mysql:dump</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-01-02T16:50:10Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Export "dump" data to SQL file</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T06:05:07Z</date>
+			<key>plainText</key>
+			<string>mysqldump -u %fill:username% -h %fill:hostname% -p %fill:dbname% &gt; %fill:dbname%_%Y%m%d-%H%M%S.sql</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>598657CA-9485-4D5D-9378-FBDC3F83701E</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>mysql:dump:gzip</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2012-01-02T16:46:47Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Export and compress "dump" data to SQL file</string>
+			<key>lastUsed</key>
+			<date>2012-03-03T01:52:03Z</date>
+			<key>modificationDate</key>
+			<date>2012-03-16T06:05:14Z</date>
+			<key>plainText</key>
+			<string>mysqldump -u %fill:username% -h %fill:hostname% -p %fill:dbname% | gzip -9 &gt; %fill:dbname%_%Y%m%d-%H%M%S.sql.gz</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>993B4334-74C8-4DD6-9C27-215D84592C40</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>mysql:import:file:new</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2012-01-02T16:44:22Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Import data from external file</string>
+			<key>lastUsed</key>
+			<date>2012-03-13T23:44:31Z</date>
+			<key>modificationDate</key>
+			<date>2012-03-16T06:04:14Z</date>
+			<key>plainText</key>
+			<string>mysql -u %fill:username% -p -h %fill:hostname% &lt; %fill:file%.sql</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>A7689A86-8750-4C46-BA61-209B6382314A</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>mysql:import:sql</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2012-01-02T16:41:49Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Import data from external file (SQL)</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T06:04:29Z</date>
+			<key>plainText</key>
+			<string>SHOW DATABASES;
+DROP DATABASE %fill:dbname%;
+CREATE DATABASE %fill:dbname%;
+USE %fill:dbname%;
+SOURCE %fill:file%.sql;</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>4A15800C-0ADF-4DA8-BA28-C17602AE501B</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>mysql:sql:format</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2012-01-02T16:40:16Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Fromat SQL column results nicely</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T06:05:32Z</date>
+			<key>plainText</key>
+			<string>%clipboard\G</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>456695E6-C321-49F4-AFB7-716104C9BDDB</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>mysql:version</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2012-01-02T08:20:24Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Get MySQL version</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T06:05:46Z</date>
+			<key>plainText</key>
+			<string>mysql -v</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>705CDC77-3052-4ECA-818D-5460B1D8AE67</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>mysql:root:password:reset</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2011-12-31T01:37:25Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Chage the root user password for MySQL</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T06:05:55Z</date>
+			<key>plainText</key>
+			<string>/usr/local/mysql/bin/mysqladmin -u root password ’%fill:password%’</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>60CA3699-276A-4C9A-9065-8A7B6D55600D</string>
+		</dict>
+	</array>
+</dict>
+</plist>

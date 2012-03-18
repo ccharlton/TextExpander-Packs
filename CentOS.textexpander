@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>CentOS</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2011-12-31T01:33:29Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Install APC PHP accelerator</string>
+			<key>modificationDate</key>
+			<date>2011-12-31T01:33:29Z</date>
+			<key>plainText</key>
+			<string>yum install php-pear
+yum install pcre-devel
+yum install php-devel
+yum install httpd-devel
+pecl install apc-beta
+echo "extension=apc.so" &gt; /etc/php.d/apc.ini
+service httpd restart</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>E70C475F-F0F7-41B7-A9D1-946EB50737C0</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2011-12-31T01:32:25Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Upgrade Java 1.4 to 1.5 and start Tomcat</string>
+			<key>modificationDate</key>
+			<date>2011-12-31T01:33:18Z</date>
+			<key>plainText</key>
+			<string>sudo yum remove java | 
+sudo yum install java-1.6.0-openjdk | 
+yum install java-1.6.0-openjdk-devel |
+sudo yum install -y tomcat5 |
+service tomcat5 start</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>55212905-A881-47A4-A4A6-B452FD65CADA</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2011-12-31T01:31:26Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Install Git</string>
+			<key>modificationDate</key>
+			<date>2011-12-31T01:31:26Z</date>
+			<key>plainText</key>
+			<string>rpm -ivh http://repo.webtatic.com/yum/centos/5/`uname -i`/webtatic-release-5-1.noarch.rpm | yum install --enablerepo=webtatic git-all</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>BD7F6406-C750-40CE-AA4A-6B37992714E8</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2011-12-31T01:30:44Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Install libcurl distribution (long)</string>
+			<key>modificationDate</key>
+			<date>2011-12-31T01:30:44Z</date>
+			<key>plainText</key>
+			<string>yum install freetype-devel libpng-devel libjpeg-devel libpng libjpeg t1lib  libc-client-devel  libmcrypt-devel gmp-devel mysql-devel</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>23985768-27A3-4320-BC15-AD0C4A3A18B9</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2011-12-31T01:27:26Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Install libcurl distribution (short)</string>
+			<key>modificationDate</key>
+			<date>2011-12-31T01:30:38Z</date>
+			<key>plainText</key>
+			<string>yum -y install curl-devel</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>DFE37FBC-6061-4E2A-AC07-4945108E48E0</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2011-12-31T01:25:49Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Install APC &amp; Uploadprogress</string>
+			<key>modificationDate</key>
+			<date>2011-12-31T01:27:00Z</date>
+			<key>plainText</key>
+			<string>yum install php-pear | 
+yum install php-devel |
+yum install httpd-devel | 
+pecl install apc</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>3B4BC978-8F66-4025-9520-4642A399D940</string>
+		</dict>
+	</array>
+</dict>
+</plist>
