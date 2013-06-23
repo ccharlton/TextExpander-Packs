@@ -13,6 +13,44 @@
 	<array>
 		<dict>
 			<key>abbreviation</key>
+			<string>apache:vhost:template:ssl</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-06-23T06:57:31Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Apache Vhost with SSL (template)</string>
+			<key>modificationDate</key>
+			<date>2013-06-23T06:59:38Z</date>
+			<key>plainText</key>
+			<string>&lt;VirtualHost *:443&gt;
+  ServerAdmin webmaster@localhost
+  ServerName %fill:domain%
+  ServerAlias www.%fill:domain%
+  DocumentRoot /var/www/%fill:domain%/htdocs
+  
+  # Logs
+  CustomLog /var/log/apache/www.foo.com-access.log combined
+  ErrorLog /var/log/apache/www.foo.com-error.log
+
+  # Basic SSL configuration
+  SSLEngine on
+  SSLProtocol all -SSLv2
+  SSLCipherSuite HIGH:MEDIUM:!aNULL:!MD5
+  SSLCertificateFile "/var/www/%fill:domain%/ssl/server.crt"
+  SSLCertificateKeyFile "/var/www/%fill:domain%/ssl/server.key"
+&lt;/VirtualHost&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>299657DB-23D3-42D1-8F2C-C88C757EBC97</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
 			<string>apache:conf:deflate</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
@@ -57,7 +95,7 @@ LoadModule deflate_module modules/mod_deflate.so
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>DB004254-64AD-4806-B875-822C66901771</string>
+			<string>D1CE6AEB-42E2-45C5-A17F-0F8FDFEC727C</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -79,7 +117,7 @@ LoadModule deflate_module modules/mod_deflate.so
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>1337D7BC-E9CB-4306-8533-B1BD32F9B52D</string>
+			<string>975F6882-DD70-4104-83D2-0DBD4A8A7FBC</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -101,7 +139,7 @@ LoadModule deflate_module modules/mod_deflate.so
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>DCA57948-2FD6-464A-8CBD-69D19DE52550</string>
+			<string>563AAC45-F909-4506-9244-169A8C6B9F33</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -123,7 +161,7 @@ LoadModule deflate_module modules/mod_deflate.so
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>13CE0AA2-D1F9-4BBC-A776-023D705BE5CD</string>
+			<string>9F76D218-B11B-4E48-9CDE-55183209E742</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -145,7 +183,7 @@ LoadModule deflate_module modules/mod_deflate.so
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>F1E2A21C-0F66-4703-8051-BBAA043E28D7</string>
+			<string>748CF7C5-3DB7-4F2F-8892-E7CF8AAB41B9</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -167,7 +205,7 @@ LoadModule deflate_module modules/mod_deflate.so
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>81B30A0E-ED9D-4338-B81B-4C1F3CAAF3DE</string>
+			<string>D0D38959-291D-4F1D-8D87-F34BEEE83020</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -191,7 +229,7 @@ ServerTokens Prod
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>0C4F1903-79D9-4EF2-B27C-EC53AC772E99</string>
+			<string>962C6FC8-CFD4-4FBA-AE15-5D794A02916A</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -213,7 +251,7 @@ ServerTokens Prod
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>78098561-7DEC-43D0-B3E1-37438C36DA88</string>
+			<string>9CCBF6FA-8700-4BDC-BF44-B8326B129BDA</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -237,7 +275,7 @@ ServerTokens Prod
 			<key>useCount</key>
 			<integer>1</integer>
 			<key>uuidString</key>
-			<string>7F375783-E7BA-431B-BCA9-FB75222921C7</string>
+			<string>70A06278-9A05-4741-9D49-9AFF1C707BA5</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -261,7 +299,7 @@ ServerTokens Prod
 			<key>useCount</key>
 			<integer>1</integer>
 			<key>uuidString</key>
-			<string>B37E0729-F338-417F-A49A-1175D933537B</string>
+			<string>F4E2AE53-47D8-48BE-867A-8FDB41CCAE9B</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -275,13 +313,13 @@ ServerTokens Prod
 			<key>label</key>
 			<string>Apache VHost (template)</string>
 			<key>modificationDate</key>
-			<date>2012-03-16T05:44:36Z</date>
+			<date>2013-06-23T06:58:45Z</date>
 			<key>plainText</key>
 			<string>&lt;VirtualHost *:80&gt;
    ServerAdmin webmaster@localhost
    ServerName %fill:domain%
    ServerAlias www.%fill:domain%
-   DocumentRoot /var/www/%fill:domain%
+   DocumentRoot /var/www/%fill:domain%/htdocs
 
    &lt;Directory /var/www/html&gt;
        &lt;LimitExcept GET POST&gt;
@@ -289,9 +327,9 @@ ServerTokens Prod
        &lt;/LimitExcept&gt;
    &lt;/Directory&gt;
 
-   # log file for this server
+   # log files for this domain
    CustomLog /var/log/apache2/%fill:domain%-access.log combined
-   CustomLog /var/log/apache2/%fill:domain%-access.log combined
+   ErrprLog /var/log/apache2/%fill:domain%-error.log
 
    # Deflate (compression)
    AddOutputFilterByType DEFLATE text/plain
@@ -318,7 +356,7 @@ ServerTokens Prod
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>4F1D4A85-089A-405E-9C90-EF2169941DBB</string>
+			<string>9F6A82C4-9064-4CA4-BA22-D58034E4B7CA</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -340,7 +378,7 @@ ServerTokens Prod
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>0A3394FA-F060-46F6-9528-7BA249FCE78E</string>
+			<string>2D90197F-7E6C-4CEB-86D6-D657D95D432B</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -362,7 +400,7 @@ ServerTokens Prod
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>D30733CD-1390-43F5-8D73-E3639E456721</string>
+			<string>6BA4B0A6-3314-42E3-954E-B3DD9E999DAC</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -384,7 +422,7 @@ ServerTokens Prod
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>561EA5A7-6258-4182-A815-91DB5AFC46E8</string>
+			<string>D13B4C8C-3DFB-421C-97AB-90871C56F630</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -406,7 +444,7 @@ ServerTokens Prod
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>51FFC456-1711-4B2A-A400-566A8DB4EBBA</string>
+			<string>7F6739D9-24B3-4825-9E43-054AE2EE1160</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -428,7 +466,7 @@ ServerTokens Prod
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>7E7D6BBE-7C8C-42CA-BCD6-5301B875540A</string>
+			<string>96670DE5-F6E2-47C0-A985-E9585C0653CB</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -450,7 +488,7 @@ ServerTokens Prod
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>65A5ED43-BDE6-427B-9E50-907EB876AA24</string>
+			<string>89249365-B6B3-4129-A1CD-14F1C5B01226</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -472,7 +510,7 @@ ServerTokens Prod
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>2083042D-C76C-4635-86C3-F0DBA6AD6D9A</string>
+			<string>B5677217-7E8B-4E1E-8F64-200AD5EEF2FE</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -494,7 +532,7 @@ ServerTokens Prod
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>7FCBB620-2985-4193-A725-D5E94880D9B0</string>
+			<string>DC323BD2-F1C8-4610-B0B4-474F99643DB8</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -516,7 +554,7 @@ ServerTokens Prod
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>00325E0A-36DE-45C5-B684-3A1780AA004F</string>
+			<string>9BA38226-6069-45D1-949A-37FA3A29A21C</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -538,7 +576,7 @@ ServerTokens Prod
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>B8EEC1F1-03C2-4A24-B71F-2964975E9856</string>
+			<string>EB246620-7471-46D9-B11D-499E5F58A6B0</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -560,7 +598,7 @@ ServerTokens Prod
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>A13C64B9-EC7F-4E76-8848-09AC3E1A3CA5</string>
+			<string>8C88D29C-7A46-4FD8-A745-5A67A14D16D6</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -582,7 +620,7 @@ ServerTokens Prod
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>5401379D-A95B-42B6-A37C-AFD288DF16AB</string>
+			<string>9374C7C5-825A-4F7C-978C-584FB29882A7</string>
 		</dict>
 	</array>
 </dict>
