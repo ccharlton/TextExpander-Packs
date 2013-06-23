@@ -13,6 +13,116 @@
 	<array>
 		<dict>
 			<key>abbreviation</key>
+			<string>test:echo</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-06-23T07:00:52Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Test echo</string>
+			<key>modificationDate</key>
+			<date>2013-06-23T07:01:05Z</date>
+			<key>plainText</key>
+			<string>echo -e "An apple a day keeps away \a\t\tdoctor\n"</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>4DD6D240-E9D6-4C09-941A-DE79282DC4E3</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>watch:file</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-06-23T05:40:30Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Watch a file change</string>
+			<key>modificationDate</key>
+			<date>2013-06-23T05:40:30Z</date>
+			<key>plainText</key>
+			<string>tail -c %filltext:name=Number of lines:default=100:width=25% %clipboard</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>B318A09A-97DC-472F-8A0A-3334F140BE94</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>file:read</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-06-23T05:38:02Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Read the first number of lines of a file</string>
+			<key>modificationDate</key>
+			<date>2013-06-23T05:39:32Z</date>
+			<key>plainText</key>
+			<string>head -%filltext:name=Number of lines:default=10:width=25% %clipboard</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>C53FD585-3475-440B-8AAB-2D089201AF61</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>rsync:remote</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-06-23T04:55:41Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>rsync between remote and local</string>
+			<key>modificationDate</key>
+			<date>2013-06-23T05:45:04Z</date>
+			<key>plainText</key>
+			<string>rsync -ahiz%fillpart:name=Verbose output:default=yes%v%fillpartend% %fillpart:name=Show progress:default=yes%--progress%fillpartend%%fillpart:name=Limit bandwidth%--bwlimit=10000%fillpartend%%filltext:name=username%@%filltext:name=Remote server%:%filltext:name=Copy from:width=35% %filltext:name=Copy to:width=35% %fillpart:name=Verbose output%-v%fillpartend%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>DF9C3E69-5B0F-46CA-8FC2-E05D82EE2A70</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>rsync:local</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-06-23T04:49:58Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>rsync between two local paths</string>
+			<key>modificationDate</key>
+			<date>2013-06-23T05:42:45Z</date>
+			<key>plainText</key>
+			<string>rsync -avhi --progress %fillpart:name=Simulate run%--dry-run%fillpartend% %fillpart:name=Include pattern%--include '*.xyz'%fillpartend%%fillpart:name=Exclude pattern:default=yes%--exclude '*.xyz'%fillpartend% %filltext:name=Source path:width=35% %filltext:name=Destination path:width=35%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>4CA4FDB0-D018-4314-97FA-7FDD71F5B8DD</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
 			<string>files:loop</string>
 			<key>abbreviationMode</key>
 			<integer>1</integer>
@@ -31,7 +141,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>FE22B4D9-487C-4971-A0F3-B319B102728C</string>
+			<string>BE8A1A06-D07D-4A72-867B-EEC0F97F8B4F</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -54,7 +164,7 @@ ifconfig en0 up</string>
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>162E017C-D04A-4E6D-8A3C-77ED39DE45B9</string>
+			<string>20C17850-5A4D-4300-893E-7ECC21371B5C</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -76,7 +186,7 @@ ifconfig en0 up</string>
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>6C57722D-8273-44F2-8341-6095848E1861</string>
+			<string>CD837C94-B605-441C-8461-51AD75402C71</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -98,7 +208,7 @@ ifconfig en0 up</string>
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>3D762C90-8205-4F02-A7C8-F0E457B1D177</string>
+			<string>685D7E86-A3A7-4517-9883-450E3868CAA3</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -122,7 +232,7 @@ ifconfig en0 up</string>
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>2BFBB2F3-E1F9-4AF8-B301-3A96B3484D6A</string>
+			<string>E5B2FB93-CCBF-4712-BEEC-0702B3BE654A</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -146,7 +256,7 @@ ifconfig en0 up</string>
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>DF50293A-57AC-450E-B276-9198AB77ECE3</string>
+			<string>B6360782-B3AD-4BF6-973A-4752E0A54805</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -168,7 +278,7 @@ ifconfig en0 up</string>
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>FE1D9A61-E64D-415B-A891-4A63BEEBA32D</string>
+			<string>0B586E4B-BCCC-452A-AD13-7B285904AAD0</string>
 		</dict>
 	</array>
 </dict>
