@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>SQL</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>db:new</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-06-23T05:50:09Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Create new database</string>
+			<key>modificationDate</key>
+			<date>2013-06-23T05:50:09Z</date>
+			<key>plainText</key>
+			<string>CREATE DATABASE %filltext:name=Database%;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>79E312DD-59DC-4575-835E-70FBBD5C0DBB</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>db:del</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-06-23T05:48:37Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Delete database</string>
+			<key>modificationDate</key>
+			<date>2013-06-23T05:50:43Z</date>
+			<key>plainText</key>
+			<string>DROP DATABASE %filltext:name=Database%;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>D44CA697-D8A8-4DD6-B61E-4F93241200E9</string>
+		</dict>
+	</array>
+</dict>
+</plist>
