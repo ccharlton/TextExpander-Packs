@@ -13,6 +13,188 @@
 	<array>
 		<dict>
 			<key>abbreviation</key>
+			<string>user:del</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-06-23T07:42:47Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Delete Linux/Unix user</string>
+			<key>modificationDate</key>
+			<date>2013-06-23T07:43:38Z</date>
+			<key>plainText</key>
+			<string>userdel %fillpart:name=Remove Home directory too:default=yes%-r %fillpartend%%filltext:name=Username%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>4B36CCA4-C9A0-4BAD-91D4-4FD795B04BA8</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ssh:add</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-06-23T07:36:24Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Generate new SSH key</string>
+			<key>modificationDate</key>
+			<date>2013-06-23T07:38:03Z</date>
+			<key>plainText</key>
+			<string>ssh-keygen -t rsa -C "%filltext:name=Comment% Key"</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>C9C20D47-3AC1-4558-95C4-3B3B1A7CD121</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ssh:copy</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-06-23T07:34:57Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Copy SSH public key to clipboard/pasteboard</string>
+			<key>modificationDate</key>
+			<date>2013-06-23T07:37:59Z</date>
+			<key>plainText</key>
+			<string>pbcopy &lt; ~/.ssh/id_rsa.pub</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>38C40DE0-62CF-4EBA-9E56-CCBB6BE1AB22</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>copy:</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-06-23T07:33:53Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Copy from file to clipboard/pasteboard</string>
+			<key>modificationDate</key>
+			<date>2013-06-23T07:33:53Z</date>
+			<key>plainText</key>
+			<string>pbcopy &lt; %clipboard</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>7F89E43B-E5F9-46BC-BCE0-13C958EEFC5B</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ssh:pass</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-06-23T07:30:04Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Reset or remove SSH password/passphrase</string>
+			<key>modificationDate</key>
+			<date>2013-06-23T07:37:54Z</date>
+			<key>plainText</key>
+			<string>ssh-keygen -p -P %filltext:name=Old passphrase:width=35% -N %filltext:name=New passphrase:width=35% %fillpart:name=Key file% -f ~/.ssh/keyfile%fillpartend%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>B49970B6-2B82-4607-88CF-60AAD4F790C9</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>cron:file</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-06-23T07:13:29Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Add crontab tasks from file</string>
+			<key>modificationDate</key>
+			<date>2013-06-23T07:13:29Z</date>
+			<key>plainText</key>
+			<string>crontab %clipboard</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>D56C3B15-EAF9-4C72-8885-9E82D17AD8B1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>cron:list</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-06-23T07:05:10Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>List cron tasks</string>
+			<key>modificationDate</key>
+			<date>2013-06-23T07:05:44Z</date>
+			<key>plainText</key>
+			<string>crontab -l</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>788A7572-A8F4-4C2A-94E4-E15693A08A55</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>cron:template</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-06-21T18:22:51Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Cron template</string>
+			<key>modificationDate</key>
+			<date>2013-06-23T07:17:51Z</date>
+			<key>plainText</key>
+			<string># +---------------- minute (0 - 59)
+# |  +------------- hour (0 - 23)
+# |  |  +---------- day of month (1 - 31)
+# |  |  |  +------- month (1 - 12)
+# |  |  |  |  +---- day of week (0 - 7) (Sunday=0 or 7)
+# |  |  |  |  |
+# *  *  *  *  *  /command</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>6474F330-4942-49DA-98AC-6DA593FE10B6</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
 			<string>grep:text</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
@@ -31,7 +213,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>5D2AEEC0-3531-4D49-9A71-D6A98F55F2EB</string>
+			<string>342BB571-4B53-4FCE-A6F8-43A6ED173298</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -53,7 +235,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>624EDFC9-A938-44F4-B94B-D30FDE075CD7</string>
+			<string>2C77A769-3B10-4043-863D-E49B24811B51</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -75,7 +257,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>66922281-3208-48A9-B77A-996633C6B98A</string>
+			<string>3678367E-1496-4BDF-9AE7-9E4024741CE8</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -97,7 +279,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>D4FDEAE9-0B8F-4D10-A2D0-2380129D49C8</string>
+			<string>E1250D3B-0B9F-45A5-AD8D-E4A343C8ECB4</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -119,7 +301,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>9AFB2DDD-964E-4187-980C-E5CA0E1AFCFE</string>
+			<string>B950A0B2-61AE-4B44-8928-82E92417F261</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -141,7 +323,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>2C729BB1-F108-409B-BE47-8711DE3C5FDE</string>
+			<string>37AB492D-3608-42AB-A7F1-C55962BFE3DC</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -163,205 +345,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>6328AE06-3CCB-4F7A-922E-35C54E27BAAD</string>
-		</dict>
-		<dict>
-			<key>abbreviation</key>
-			<string>linus:users:list:home</string>
-			<key>abbreviationMode</key>
-			<integer>0</integer>
-			<key>creationDate</key>
-			<date>2012-03-16T03:27:22Z</date>
-			<key>flags</key>
-			<integer>0</integer>
-			<key>label</key>
-			<string>List Linux users with home directories</string>
-			<key>modificationDate</key>
-			<date>2012-03-16T03:27:46Z</date>
-			<key>plainText</key>
-			<string>cat /etc/passwd | grep "/home" |cut -d: -f1</string>
-			<key>snippetType</key>
-			<integer>0</integer>
-			<key>useCount</key>
-			<integer>0</integer>
-			<key>uuidString</key>
-			<string>653FBCB9-FCF2-49A3-B020-BA409D8DDCA1</string>
-		</dict>
-		<dict>
-			<key>abbreviation</key>
-			<string>linus:users:list:home:full</string>
-			<key>abbreviationMode</key>
-			<integer>0</integer>
-			<key>creationDate</key>
-			<date>2012-03-16T03:26:19Z</date>
-			<key>flags</key>
-			<integer>0</integer>
-			<key>label</key>
-			<string>List Linux users with home directories (full)</string>
-			<key>modificationDate</key>
-			<date>2012-03-16T03:27:49Z</date>
-			<key>plainText</key>
-			<string>cat /etc/passwd | grep "/home"</string>
-			<key>snippetType</key>
-			<integer>0</integer>
-			<key>useCount</key>
-			<integer>0</integer>
-			<key>uuidString</key>
-			<string>5FA7DDD4-48BC-47FE-B638-999BEC0AACDC</string>
-		</dict>
-		<dict>
-			<key>abbreviation</key>
-			<string>linux:user:groups</string>
-			<key>abbreviationMode</key>
-			<integer>0</integer>
-			<key>creationDate</key>
-			<date>2012-03-16T03:24:41Z</date>
-			<key>flags</key>
-			<integer>0</integer>
-			<key>label</key>
-			<string>List Linux user groups</string>
-			<key>modificationDate</key>
-			<date>2012-03-16T03:24:41Z</date>
-			<key>plainText</key>
-			<string>cat /etc/group | cut -d":" -f1</string>
-			<key>snippetType</key>
-			<integer>0</integer>
-			<key>useCount</key>
-			<integer>0</integer>
-			<key>uuidString</key>
-			<string>C5A9964E-40BD-4F35-9ABE-4E89A3F58C5C</string>
-		</dict>
-		<dict>
-			<key>abbreviation</key>
-			<string>linux:user:groups:full</string>
-			<key>abbreviationMode</key>
-			<integer>0</integer>
-			<key>creationDate</key>
-			<date>2012-03-16T03:23:05Z</date>
-			<key>flags</key>
-			<integer>0</integer>
-			<key>label</key>
-			<string>List Linux user groups (full)</string>
-			<key>modificationDate</key>
-			<date>2012-03-16T03:24:57Z</date>
-			<key>plainText</key>
-			<string>cat /etc/group</string>
-			<key>snippetType</key>
-			<integer>0</integer>
-			<key>useCount</key>
-			<integer>0</integer>
-			<key>uuidString</key>
-			<string>C345374D-7CE5-4FAB-945F-8F5D049FE1AC</string>
-		</dict>
-		<dict>
-			<key>abbreviation</key>
-			<string>linux:user:list</string>
-			<key>abbreviationMode</key>
-			<integer>0</integer>
-			<key>creationDate</key>
-			<date>2012-03-16T03:22:07Z</date>
-			<key>flags</key>
-			<integer>0</integer>
-			<key>label</key>
-			<string>List Linux users (names only)</string>
-			<key>modificationDate</key>
-			<date>2012-03-16T03:22:23Z</date>
-			<key>plainText</key>
-			<string>cat /etc/passwd | cut -d":" -f1</string>
-			<key>snippetType</key>
-			<integer>0</integer>
-			<key>useCount</key>
-			<integer>0</integer>
-			<key>uuidString</key>
-			<string>636C8A36-E402-4442-A492-BA00A100DC72</string>
-		</dict>
-		<dict>
-			<key>abbreviation</key>
-			<string>linux:user:list:full</string>
-			<key>abbreviationMode</key>
-			<integer>0</integer>
-			<key>creationDate</key>
-			<date>2012-03-16T03:21:03Z</date>
-			<key>flags</key>
-			<integer>0</integer>
-			<key>label</key>
-			<string>List Linux users (unfiltered)</string>
-			<key>modificationDate</key>
-			<date>2012-03-16T03:22:31Z</date>
-			<key>plainText</key>
-			<string>cat /etc/passwd</string>
-			<key>snippetType</key>
-			<integer>0</integer>
-			<key>useCount</key>
-			<integer>0</integer>
-			<key>uuidString</key>
-			<string>23CEEBF5-F979-4C3B-8FB6-803519DFD28C</string>
-		</dict>
-		<dict>
-			<key>abbreviation</key>
-			<string>linux:user:group:primary</string>
-			<key>abbreviationMode</key>
-			<integer>0</integer>
-			<key>creationDate</key>
-			<date>2012-03-16T02:06:24Z</date>
-			<key>flags</key>
-			<integer>0</integer>
-			<key>label</key>
-			<string>Change existing Linux user primary group</string>
-			<key>modificationDate</key>
-			<date>2012-03-16T02:07:01Z</date>
-			<key>plainText</key>
-			<string>user mod -g %fill:group% %fill:user%</string>
-			<key>snippetType</key>
-			<integer>0</integer>
-			<key>useCount</key>
-			<integer>0</integer>
-			<key>uuidString</key>
-			<string>F54DB7E5-3C52-44DC-9C0F-C3DB7149A531</string>
-		</dict>
-		<dict>
-			<key>abbreviation</key>
-			<string>linux:user:group:add</string>
-			<key>abbreviationMode</key>
-			<integer>0</integer>
-			<key>creationDate</key>
-			<date>2012-03-16T02:04:03Z</date>
-			<key>flags</key>
-			<integer>0</integer>
-			<key>label</key>
-			<string>Add existing Linux user to a group</string>
-			<key>modificationDate</key>
-			<date>2012-03-16T02:05:55Z</date>
-			<key>plainText</key>
-			<string>user mod -a -G %fill:group%</string>
-			<key>snippetType</key>
-			<integer>0</integer>
-			<key>useCount</key>
-			<integer>0</integer>
-			<key>uuidString</key>
-			<string>BE7460DC-F99E-45C0-83C4-CAA448CDF2F3</string>
-		</dict>
-		<dict>
-			<key>abbreviation</key>
-			<string>linux:user:details</string>
-			<key>abbreviationMode</key>
-			<integer>0</integer>
-			<key>creationDate</key>
-			<date>2012-03-16T02:00:23Z</date>
-			<key>flags</key>
-			<integer>0</integer>
-			<key>label</key>
-			<string>Get user info &amp; details</string>
-			<key>modificationDate</key>
-			<date>2012-03-16T02:00:23Z</date>
-			<key>plainText</key>
-			<string>id %fill:username%</string>
-			<key>snippetType</key>
-			<integer>0</integer>
-			<key>useCount</key>
-			<integer>0</integer>
-			<key>uuidString</key>
-			<string>872456D6-7051-4658-B936-16531173DA49</string>
+			<string>AA992CA5-6D8B-4287-9349-B331F7F86270</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -383,117 +367,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>20E596F1-2D32-4045-A821-6D129D02DC75</string>
-		</dict>
-		<dict>
-			<key>abbreviation</key>
-			<string>linux:group:exists</string>
-			<key>abbreviationMode</key>
-			<integer>0</integer>
-			<key>creationDate</key>
-			<date>2012-03-16T01:58:41Z</date>
-			<key>flags</key>
-			<integer>0</integer>
-			<key>label</key>
-			<string>Check if Linux user group exists</string>
-			<key>modificationDate</key>
-			<date>2012-03-16T01:59:12Z</date>
-			<key>plainText</key>
-			<string>grep %fill:groupname% /etc/group</string>
-			<key>snippetType</key>
-			<integer>0</integer>
-			<key>useCount</key>
-			<integer>0</integer>
-			<key>uuidString</key>
-			<string>562BC0AC-C8B8-42FC-93E3-CA6F52D96E02</string>
-		</dict>
-		<dict>
-			<key>abbreviation</key>
-			<string></string>
-			<key>abbreviationMode</key>
-			<integer>0</integer>
-			<key>creationDate</key>
-			<date>2012-03-16T01:57:28Z</date>
-			<key>flags</key>
-			<integer>0</integer>
-			<key>label</key>
-			<string>Add new Linux user (w/group)</string>
-			<key>modificationDate</key>
-			<date>2012-03-16T02:03:26Z</date>
-			<key>plainText</key>
-			<string>useradd -G %fill:groups% %fill:username%</string>
-			<key>snippetType</key>
-			<integer>0</integer>
-			<key>useCount</key>
-			<integer>0</integer>
-			<key>uuidString</key>
-			<string>F102A06A-15E4-40D8-AB57-E344ED6D2B44</string>
-		</dict>
-		<dict>
-			<key>abbreviation</key>
-			<string>linux:user:password:set</string>
-			<key>abbreviationMode</key>
-			<integer>0</integer>
-			<key>creationDate</key>
-			<date>2012-03-16T01:54:39Z</date>
-			<key>flags</key>
-			<integer>0</integer>
-			<key>label</key>
-			<string>Set password for Linux user</string>
-			<key>modificationDate</key>
-			<date>2012-03-16T01:54:39Z</date>
-			<key>plainText</key>
-			<string>passwd %fill:username%</string>
-			<key>snippetType</key>
-			<integer>0</integer>
-			<key>useCount</key>
-			<integer>0</integer>
-			<key>uuidString</key>
-			<string>23118B1E-E647-4601-99C7-F2A5DEB0A8BF</string>
-		</dict>
-		<dict>
-			<key>abbreviation</key>
-			<string>linux:user:temp:add</string>
-			<key>abbreviationMode</key>
-			<integer>0</integer>
-			<key>creationDate</key>
-			<date>2012-03-16T01:52:17Z</date>
-			<key>flags</key>
-			<integer>0</integer>
-			<key>label</key>
-			<string>Add temporary Linux user</string>
-			<key>modificationDate</key>
-			<date>2012-03-16T01:52:17Z</date>
-			<key>plainText</key>
-			<string>useradd -e %fill:yyyy%-%fill:mm%-%fill:dd% %fill:username%</string>
-			<key>snippetType</key>
-			<integer>0</integer>
-			<key>useCount</key>
-			<integer>0</integer>
-			<key>uuidString</key>
-			<string>0F460958-79E2-4C3B-8E93-B205696BED8A</string>
-		</dict>
-		<dict>
-			<key>abbreviation</key>
-			<string>linux:user:add</string>
-			<key>abbreviationMode</key>
-			<integer>0</integer>
-			<key>creationDate</key>
-			<date>2012-03-16T01:51:16Z</date>
-			<key>flags</key>
-			<integer>0</integer>
-			<key>label</key>
-			<string>Add Linux user</string>
-			<key>modificationDate</key>
-			<date>2012-03-16T01:56:14Z</date>
-			<key>plainText</key>
-			<string>useradd %fill:username% -c %fill:comment%</string>
-			<key>snippetType</key>
-			<integer>0</integer>
-			<key>useCount</key>
-			<integer>0</integer>
-			<key>uuidString</key>
-			<string>32E320D3-CAB1-47D4-A23E-72772FE68B03</string>
+			<string>3B25D9AB-2B34-4EF7-B19B-99F0328CE970</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -515,7 +389,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>5F4EA2D0-D903-4A24-8476-C6E7FBDCBD4C</string>
+			<string>98DA9E1A-95BD-423C-879F-C4E3F873F3A3</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -537,7 +411,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>0CD6F531-BC4F-401D-80A8-38BFB9BBDDD6</string>
+			<string>693C8861-0241-4C7F-82F1-C9B464511406</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -559,7 +433,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>6DA65CC5-EC9D-4D0A-B88A-A4BA54A8BE9C</string>
+			<string>8E96E052-C815-4D5C-B44C-656118D05759</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -581,7 +455,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>656943A3-6C69-455E-9653-3F7668EEC7B2</string>
+			<string>453F64B9-9B23-4633-8EDC-E8117A611961</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -603,51 +477,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>83666478-391F-4A1E-826A-2B1C492EAB04</string>
-		</dict>
-		<dict>
-			<key>abbreviation</key>
-			<string>user:activity</string>
-			<key>abbreviationMode</key>
-			<integer>1</integer>
-			<key>creationDate</key>
-			<date>2012-02-29T05:20:56Z</date>
-			<key>flags</key>
-			<integer>0</integer>
-			<key>label</key>
-			<string>Find out what a user is doing</string>
-			<key>modificationDate</key>
-			<date>2012-02-29T05:20:56Z</date>
-			<key>plainText</key>
-			<string>w %fill:username%</string>
-			<key>snippetType</key>
-			<integer>0</integer>
-			<key>useCount</key>
-			<integer>0</integer>
-			<key>uuidString</key>
-			<string>550740A3-36D0-45DE-A02C-CAA135EA0A2D</string>
-		</dict>
-		<dict>
-			<key>abbreviation</key>
-			<string>users:now</string>
-			<key>abbreviationMode</key>
-			<integer>1</integer>
-			<key>creationDate</key>
-			<date>2012-02-29T05:20:26Z</date>
-			<key>flags</key>
-			<integer>2</integer>
-			<key>label</key>
-			<string>Find out who is logged in</string>
-			<key>modificationDate</key>
-			<date>2012-02-29T05:20:50Z</date>
-			<key>plainText</key>
-			<string>w</string>
-			<key>snippetType</key>
-			<integer>3</integer>
-			<key>useCount</key>
-			<integer>0</integer>
-			<key>uuidString</key>
-			<string>75B50C53-AB57-496E-AA87-ED028287B936</string>
+			<string>4ED81531-08A9-4197-B019-1251324336DE</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -669,7 +499,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>650A3EE3-C7A6-4492-92C4-134EC0B2732B</string>
+			<string>E8AA1788-8007-4D84-A0A2-AD413E5B0C18</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -691,7 +521,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>08E9A1BE-D24C-4C4B-A990-BF3D4F97F079</string>
+			<string>54E716EA-0889-4B06-8B8E-7F8DB59641D0</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -713,7 +543,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>0826A6EC-49C8-4411-8E9D-8AB4FB57E71C</string>
+			<string>EE3EE6B4-CAAE-4496-BFEE-0A2EFBDDA553</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -735,7 +565,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>087EEE19-CC24-4788-822F-9FFB04BA1DC0</string>
+			<string>DD2A17CB-0A76-42E4-A5D9-00499D0D49D4</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -757,7 +587,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>D90872C5-105D-410E-BB84-E18119FFCAA0</string>
+			<string>7BF6E39D-840E-4B64-926C-A06B45DEEF9B</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -779,7 +609,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>9F49CE7C-9BCD-42EF-B9BC-2EF0173FB1EA</string>
+			<string>204DC0A3-2AFC-489C-B476-ADA14F38127C</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -803,7 +633,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>A6BE3B64-DC31-4FD7-A761-1533B3D59263</string>
+			<string>860C6935-6259-496B-9998-6C508376601B</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -825,7 +655,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>531B879C-AEF5-4632-9B2B-D6D156932567</string>
+			<string>D8897146-3950-40C0-A7BC-18E063729209</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -847,7 +677,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>923C6E6A-6591-436E-9199-F5B980D73D09</string>
+			<string>43C602BB-8DB5-46F7-A581-7723619C858C</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -869,7 +699,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>89202C3A-CAB1-47C1-847D-7DBCF5D7E975</string>
+			<string>C72CEA0B-9018-428F-814D-82F7D764A2D0</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -891,7 +721,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>E0683134-40DD-491A-97F2-8B1672CD53F0</string>
+			<string>06FEFD92-FC61-43EC-8466-ABFFE275CC53</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -913,7 +743,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>E23CAD4D-A347-419A-9353-1909692F16EB</string>
+			<string>7A453027-A8D5-4754-B6E1-284A8F18F9CD</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -935,7 +765,448 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>2661D229-8F0E-462B-8B89-126EF6BBBEF8</string>
+			<string>CAB85B31-CB82-4540-BC3F-81AB6344CB87</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ssh:echo</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-06-23T07:38:26Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Print out SSH public key (for current user)</string>
+			<key>modificationDate</key>
+			<date>2013-06-23T07:38:55Z</date>
+			<key>plainText</key>
+			<string>cat ~/.ssh/id_rsa.pub</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>D1462F35-C91D-45D7-A0D6-B790BB3DC043</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>cron:del</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-06-23T07:06:51Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Remove cron tasks (current or specific user)</string>
+			<key>modificationDate</key>
+			<date>2013-06-23T07:18:26Z</date>
+			<key>plainText</key>
+			<string>crontab -r%fillpart:name=User% -u username%fillpartend%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>AA75952C-820B-4CD3-B9DA-C7C00EE0A018</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>cron:user</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-06-23T07:05:47Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>List cron tasks for certain user</string>
+			<key>modificationDate</key>
+			<date>2013-06-23T07:05:47Z</date>
+			<key>plainText</key>
+			<string>crontab -u %filltext:name=Username% -l</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>23DEBB45-84C7-4C4A-AFDF-F7CE432C231E</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>cron:add</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-06-21T18:27:47Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Add cron task</string>
+			<key>modificationDate</key>
+			<date>2013-06-23T07:17:02Z</date>
+			<key>plainText</key>
+			<string>%fillpart:name=E-mail user or not%MAIL="user@localhost" #empty value suppresses email delivery%fillpartend%
+%filltext:name=Minute (0-59)%  %filltext:name=Hour (0-23)%  %filltext:name=Day of Month (1-31):width=30%  %filltext:name=Month (1-12)%  %filltext:name=Day of Week (0-7, Sunday):width=30%  %fillarea:name=Command to run:height=3%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>C1BE5349-008E-4F5B-A0BD-CA463B54F12A</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>linus:users:list:home</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-16T03:27:22Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>List Linux users with home directories</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T03:27:46Z</date>
+			<key>plainText</key>
+			<string>cat /etc/passwd | grep "/home" |cut -d: -f1</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>6B9C4466-2A08-4000-9C96-6787DE9C779D</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>linus:users:list:home:full</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-16T03:26:19Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>List Linux users with home directories (full)</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T03:27:49Z</date>
+			<key>plainText</key>
+			<string>cat /etc/passwd | grep "/home"</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>82FDCDE0-B758-46C6-85BC-212C97ED6F78</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>linux:user:groups</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-16T03:24:41Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>List Linux user groups</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T03:24:41Z</date>
+			<key>plainText</key>
+			<string>cat /etc/group | cut -d":" -f1</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>777C5AE9-B75F-453C-8005-4403F052C04C</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>linux:user:groups:full</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-16T03:23:05Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>List Linux user groups (full)</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T03:24:57Z</date>
+			<key>plainText</key>
+			<string>cat /etc/group</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>0C03E46B-4ABC-4E45-964B-87A37E8848A4</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>linux:user:list</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-16T03:22:07Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>List Linux users (names only)</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T03:22:23Z</date>
+			<key>plainText</key>
+			<string>cat /etc/passwd | cut -d":" -f1</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>AE795656-7BD7-492F-9D0E-8F9C461894C7</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>linux:user:list:full</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-16T03:21:03Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>List Linux users (unfiltered)</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T03:22:31Z</date>
+			<key>plainText</key>
+			<string>cat /etc/passwd</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>4231D8D9-C321-4066-9067-D5A91A737E4D</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>linux:user:group:primary</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-16T02:06:24Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Change existing Linux user primary group</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T02:07:01Z</date>
+			<key>plainText</key>
+			<string>user mod -g %fill:group% %fill:user%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>9696CE4E-D2C8-4676-BBDA-A6B2AB5075E8</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>linux:user:group:add</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-16T02:04:03Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Add existing Linux user to a group</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T02:05:55Z</date>
+			<key>plainText</key>
+			<string>user mod -a -G %fill:group%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>60C6843D-296B-4E08-8A4E-4AF6D5BC644A</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>linux:user:details</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-16T02:00:23Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Get user info &amp; details</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T02:00:23Z</date>
+			<key>plainText</key>
+			<string>id %fill:username%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>7C6786DC-241C-40AF-9E48-55E130FA4C5C</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>linux:group:exists</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-16T01:58:41Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Check if Linux user group exists</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T01:59:12Z</date>
+			<key>plainText</key>
+			<string>grep %fill:groupname% /etc/group</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>15B3CE10-2FC7-4F18-AB2C-D3855C466601</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-16T01:57:28Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Add new Linux user (w/group)</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T02:03:26Z</date>
+			<key>plainText</key>
+			<string>useradd -G %fill:groups% %fill:username%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>23CDAEAD-EBAD-4AC0-924A-DF15D5388450</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>linux:user:password:set</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-16T01:54:39Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Set password for Linux user</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T01:54:39Z</date>
+			<key>plainText</key>
+			<string>passwd %fill:username%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>1591A00C-F468-4A25-946A-98099AD3B1EB</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>linux:user:temp:add</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-16T01:52:17Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Add temporary Linux user</string>
+			<key>modificationDate</key>
+			<date>2012-03-16T01:52:17Z</date>
+			<key>plainText</key>
+			<string>useradd -e %fill:yyyy%-%fill:mm%-%fill:dd% %fill:username%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>34B04846-1D1B-4AD0-9650-81DC6FFA05E1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>linux:user:add</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-16T01:51:16Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Add Linux user (interactive)</string>
+			<key>modificationDate</key>
+			<date>2013-06-23T07:41:43Z</date>
+			<key>plainText</key>
+			<string>useradd %fill:username%%fillpart:name=Comment%-c "Comment"%fillpartend%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>68C9D466-3D9E-4949-8103-12F5E46F32DD</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>user:activity</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2012-02-29T05:20:56Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Find out what a user is doing</string>
+			<key>modificationDate</key>
+			<date>2012-02-29T05:20:56Z</date>
+			<key>plainText</key>
+			<string>w %fill:username%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>FE20B0FE-0651-49F3-8D0C-F8B44528B1C4</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>users:now</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2012-02-29T05:20:26Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Find out who is logged in</string>
+			<key>modificationDate</key>
+			<date>2012-02-29T05:20:50Z</date>
+			<key>plainText</key>
+			<string>w</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>1021A61D-1F5C-4DAE-8904-7047F4D2FD9F</string>
 		</dict>
 	</array>
 </dict>
