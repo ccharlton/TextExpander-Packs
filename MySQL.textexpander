@@ -13,6 +13,50 @@
 	<array>
 		<dict>
 			<key>abbreviation</key>
+			<string>mysql:file:execute</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-06-23T09:26:33Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Executing SQL Statements from a Text File</string>
+			<key>modificationDate</key>
+			<date>2013-06-23T09:28:01Z</date>
+			<key>plainText</key>
+			<string>mysql %fillpart:name=Database%database_name%fillpartend% &lt; %filltext:name=File%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>65CFD01F-C1C1-4B48-AC3E-03EFCCE2056B</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>mysql:users</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-06-23T05:46:38Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>List MySQL users</string>
+			<key>modificationDate</key>
+			<date>2013-06-23T05:46:59Z</date>
+			<key>plainText</key>
+			<string>SELECT User FROM mysql.user;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>2213374E-6A37-4A29-8CBC-2F6F042BE0DF</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
 			<string>mysql:repair</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
@@ -31,7 +75,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>D2365D3D-47ED-4C34-95DD-774C0E40CBD6</string>
+			<string>01F5A284-C905-472C-A4E2-E5EA11CB3F66</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -53,7 +97,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>E9654AAB-AE9F-494B-8768-8A663EE7CA01</string>
+			<string>E7444480-0846-457E-905C-6D427B60D09D</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -75,7 +119,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>0F011D24-35BC-4D3E-BFDE-4E67931FF3C7</string>
+			<string>F85F15AF-D4B8-49E7-9EF4-41B8912387BE</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -97,7 +141,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>64C2BF50-BA52-4F83-840A-2AC1D6B5CB75</string>
+			<string>7F037A0B-AEDA-415A-86A3-1DC395B595BC</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -119,7 +163,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>ABB3CF52-951D-471F-ADF8-B36B82AC612C</string>
+			<string>000357EA-BE5A-4183-9E2C-F32971B62047</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -141,7 +185,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>E31CF1DF-0BA7-4311-A61C-C266D174687D</string>
+			<string>9B46967F-F573-4F54-91AC-E508FEE1A977</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -163,7 +207,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>42E482B5-1B33-4B01-B0A0-A4BB8DE86FA4</string>
+			<string>BA1F2B4F-91F6-48AB-BCF7-25954B58A243</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -185,7 +229,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>9BEB2AD5-FA91-4580-8187-0CE1E11DC113</string>
+			<string>B78F9C44-630F-4E9A-91CE-D0E1685D88D4</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -207,7 +251,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>0A9D4DEF-2E24-4521-9100-12BDD7287DDB</string>
+			<string>17B136FB-81C3-47B1-A363-35E1DAD63C29</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -229,7 +273,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>8C981931-9034-4800-B998-36623945C4D6</string>
+			<string>EE859CFC-7B5A-417F-BE5B-42ED246F1E79</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -251,7 +295,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>AB79C050-5CEE-4A3C-A1F2-526BFDFB4DE6</string>
+			<string>4C1F5F34-25E1-4F9C-AEA4-3C4C4000A869</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -273,7 +317,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>598657CA-9485-4D5D-9378-FBDC3F83701E</string>
+			<string>1ABE5A42-E369-4419-A7C4-0DC99FDFF52A</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -297,7 +341,7 @@
 			<key>useCount</key>
 			<integer>2</integer>
 			<key>uuidString</key>
-			<string>993B4334-74C8-4DD6-9C27-215D84592C40</string>
+			<string>F5A7F01E-0D9F-4AF1-BA5C-4B30E437C353</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -321,7 +365,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>A7689A86-8750-4C46-BA61-209B6382314A</string>
+			<string>2959C995-021C-4DFE-8468-8A365A90CB76</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -347,7 +391,7 @@ SOURCE %fill:file%.sql;</string>
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>4A15800C-0ADF-4DA8-BA28-C17602AE501B</string>
+			<string>2957845C-8320-4FF2-BF55-74B6E1E21CA3</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -369,7 +413,7 @@ SOURCE %fill:file%.sql;</string>
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>456695E6-C321-49F4-AFB7-716104C9BDDB</string>
+			<string>DF62CBC3-23D5-4006-B51B-4E6CA5A959CC</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -391,7 +435,7 @@ SOURCE %fill:file%.sql;</string>
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>705CDC77-3052-4ECA-818D-5460B1D8AE67</string>
+			<string>0EDE4ACE-89A2-4FC5-BDED-BF8A17D75F3A</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -413,7 +457,7 @@ SOURCE %fill:file%.sql;</string>
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>60CA3699-276A-4C9A-9065-8A7B6D55600D</string>
+			<string>A2C164DE-EDB0-40A9-B0D3-E07CF12EF382</string>
 		</dict>
 	</array>
 </dict>
