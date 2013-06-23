@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>Drush (Drupal)</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>drush:flood:del</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-06-23T07:21:59Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Flush all login flood locks</string>
+			<key>modificationDate</key>
+			<date>2013-06-23T08:30:43Z</date>
+			<key>plainText</key>
+			<string>drush sqlq "DELETE FROM flood;"</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>7D722632-2115-404C-9E42-22AF40BD40B1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>drush:flood:user</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-06-23T07:21:59Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Remove login flood lock for specific user</string>
+			<key>modificationDate</key>
+			<date>2013-06-23T08:31:12Z</date>
+			<key>plainText</key>
+			<string>drush sqlq "DELETE FROM flood WHERE event = 'failed_login_attempt_user' AND identifier LIKE '%filltext:name=User ID%-%%';"</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>271ABB70-00B5-47EB-AD31-64CDC9570CA2</string>
+		</dict>
+	</array>
+</dict>
+</plist>
