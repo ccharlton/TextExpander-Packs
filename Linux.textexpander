@@ -13,6 +13,116 @@
 	<array>
 		<dict>
 			<key>abbreviation</key>
+			<string>linux:count:file</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-07-16T23:01:34Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Count number of files in directory</string>
+			<key>modificationDate</key>
+			<date>2013-07-16T23:04:42Z</date>
+			<key>plainText</key>
+			<string>ls -1 %clipboard | wc -l</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>D39E4186-5A7B-4287-BF5B-96A17FA0653E</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>linux:count:dir</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-07-16T23:01:34Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Count number of directories</string>
+			<key>modificationDate</key>
+			<date>2013-07-16T23:01:34Z</date>
+			<key>plainText</key>
+			<string>find -mindepth 1 -type d | wc -l</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>8645C3BB-2998-4C22-92F2-7E1D5384AD6D</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>linux:process</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-07-16T23:00:16Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Process viewer (interactive)</string>
+			<key>modificationDate</key>
+			<date>2013-07-16T23:00:16Z</date>
+			<key>plainText</key>
+			<string>htop</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>92F5DE82-FF49-4538-BAFB-7819914F0DDA</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>linux:resources</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-07-16T22:58:55Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>View resource load report</string>
+			<key>modificationDate</key>
+			<date>2013-07-16T22:59:14Z</date>
+			<key>plainText</key>
+			<string>top</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>FD877FA7-6093-422D-9A18-F0078B740D80</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>linux:resources:i</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-07-16T22:58:55Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>View resource load report (interactive monitor)</string>
+			<key>modificationDate</key>
+			<date>2013-07-16T22:59:14Z</date>
+			<key>plainText</key>
+			<string>atop</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>475F0B23-6DD4-49AF-B55E-E9A4E32A546E</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
 			<string>user:del</string>
 			<key>abbreviationMode</key>
 			<integer>1</integer>
@@ -437,7 +547,7 @@
 		</dict>
 		<dict>
 			<key>abbreviation</key>
-			<string>system:memory</string>
+			<string>system:mem:free</string>
 			<key>abbreviationMode</key>
 			<integer>1</integer>
 			<key>creationDate</key>
@@ -445,17 +555,61 @@
 			<key>flags</key>
 			<integer>2</integer>
 			<key>label</key>
-			<string>Memory Usage</string>
+			<string>Free memory usage</string>
 			<key>modificationDate</key>
-			<date>2012-02-29T05:23:55Z</date>
+			<date>2013-07-16T22:57:55Z</date>
 			<key>plainText</key>
-			<string>free</string>
+			<string>free %fillpart:name=Display total:default=yes%-t%fillpartend%%fillpart:name=Units in MB:default=yes%-m%fillpartend%</string>
 			<key>snippetType</key>
 			<integer>3</integer>
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
 			<string>453F64B9-9B23-4633-8EDC-E8117A611961</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>system:mem</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2012-02-29T05:23:55Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Memory usage (detailed)</string>
+			<key>modificationDate</key>
+			<date>2013-07-16T22:57:59Z</date>
+			<key>plainText</key>
+			<string>cat /proc/meminfo</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>EE782450-5F26-422F-BB1C-F67435D6B777</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>system:mem:vm</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2012-02-29T05:23:55Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Virtual memory usage</string>
+			<key>modificationDate</key>
+			<date>2013-07-16T22:58:04Z</date>
+			<key>plainText</key>
+			<string>vmstat</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CB13CAEA-13E3-4DDB-B2AE-E2872516B87F</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
