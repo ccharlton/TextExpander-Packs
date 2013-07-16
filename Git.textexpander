@@ -13,6 +13,31 @@
 	<array>
 		<dict>
 			<key>abbreviation</key>
+			<string>git:pull:all</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-05-02T07:35:49Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Git pull multiple sub-directories</string>
+			<key>modificationDate</key>
+			<date>2013-05-02T07:36:29Z</date>
+			<key>plainText</key>
+			<string>find ~me/projects/ -type d -name .git \
+| xargs -n 1 dirname \
+| sort \
+| while read line; do echo $line &amp;&amp; cd $line &amp;&amp; git pull; done</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>E8BD3AC7-4441-4DB4-BA3C-7276E43F7DE6</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
 			<string>git:push:all</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
