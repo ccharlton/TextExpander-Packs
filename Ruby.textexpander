@@ -242,6 +242,8 @@
 			<integer>0</integer>
 			<key>label</key>
 			<string>Search for a Ruby Gem</string>
+			<key>lastUsed</key>
+			<date>2013-06-23T21:32:36Z</date>
 			<key>modificationDate</key>
 			<date>2013-06-23T07:55:49Z</date>
 			<key>plainText</key>
@@ -249,7 +251,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>0</integer>
+			<integer>1</integer>
 			<key>uuidString</key>
 			<string>BFF15CCA-6BA7-4215-9662-0A26E72CF747</string>
 		</dict>
