@@ -1,18 +1,19 @@
 TextExpander packs perfect for developers.
 
 Packs available:
-* Git
-* SVN (Subversion)
+* Git, SVN (Subversion)
 * Linux, Ubuntu, CentOS
-* MySQL
+* MySQL, SQL
 * PHP
 * Apache
 * Shell commands
-* CSS
+* CSS, Sass
+* Drush (Drupal)
+* Ruby
 
 
 
 
 Project URL: http://github.com/ccharlton/TextExpander-Packs
 
-Currently maintained by Chris Charlton - http://chrischarlton.us http://xtnd.us
+Created and currently maintained by Chris Charlton - http://chrischarlton.us http://xtnd.us
