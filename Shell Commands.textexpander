@@ -13,6 +13,87 @@
 	<array>
 		<dict>
 			<key>abbreviation</key>
+			<string>shell:script:new</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-07-16T21:59:28Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Create new shell script</string>
+			<key>modificationDate</key>
+			<date>2013-07-16T22:08:03Z</date>
+			<key>plainText</key>
+			<string>#!/bin/sh
+
+
+#######################################
+#
+#      Shell command parameters
+#
+#######################################
+
+#%filltext:name=Command Name% init
+#%filltext:name=Command Name% run
+#%filltext:name=Command Name% status
+
+
+
+#######################################
+#
+#      Shell command logic
+#
+#######################################
+
+# Check first parameter
+if [ $1 ]
+then
+    # do stuff
+    case "$1" in
+       init)
+    
+       ;;
+       status)
+    
+       ;;
+       run)
+    
+       ;;
+       *)
+          help
+       ;;
+    esac
+
+else
+    # show help
+    help
+fi
+
+
+
+
+#######################################
+#
+#      Shell command functions
+#
+#######################################
+
+function help () {
+    echo "%filltext:name=Command Name% - A simple script that does something useful, hopefully."
+    echo "
+    echo "    %filltext:name=Command Name% init                  - include in the project";
+    echo "    %filltext:name=Command Name% run                  - runs something";
+}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>3788A187-6FC8-43D9-A7B6-CC97D56C2BAA</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
 			<string>ssh:key:deploy</string>
 			<key>abbreviationMode</key>
 			<integer>1</integer>
