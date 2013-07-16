@@ -13,6 +13,36 @@
 	<array>
 		<dict>
 			<key>abbreviation</key>
+			<string>css:retina</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-07-16T22:14:20Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Hi-DPI web typography</string>
+			<key>modificationDate</key>
+			<date>2013-07-16T22:16:58Z</date>
+			<key>plainText</key>
+			<string>body, .body-text {
+  font-weight: normal;
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+        only screen and (-o-min-device-pixel-ratio: '150/100'),
+        only screen and (min-resolution: 96dpi),
+        only screen and (min-resolution: 1.5dppx) {
+  font-weight: 300;
+}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>8557F377-6E9B-464F-9B08-26BBDEF24C36</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
 			<string>css:minify</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
@@ -31,7 +61,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>23049142-928B-4A3C-821F-AED740554716</string>
+			<string>C648D55A-7443-47F8-94C7-835679F2D8BD</string>
 		</dict>
 	</array>
 </dict>
