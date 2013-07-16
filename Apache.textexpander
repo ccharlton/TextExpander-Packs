@@ -13,6 +13,28 @@
 	<array>
 		<dict>
 			<key>abbreviation</key>
+			<string>apache:vhost</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-07-16T22:45:15Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Enable or Disable site (Apache vhost/domain)</string>
+			<key>modificationDate</key>
+			<date>2013-07-16T22:49:16Z</date>
+			<key>plainText</key>
+			<string>%fillpopup:name=Enable or Disable:default=a2ensite:a2dissite% %filltext:name=Domain VHOST file%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>F2903C7B-441B-4698-A8DB-5D0DD982C2B0</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
 			<string>apache:vhost:template:ssl</string>
 			<key>abbreviationMode</key>
 			<integer>1</integer>
