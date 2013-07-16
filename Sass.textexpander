@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>Sass</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>sass:mixin:retina</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-07-16T22:17:16Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Mixin: Hi-DPI (Retina) web typography</string>
+			<key>modificationDate</key>
+			<date>2013-07-16T22:21:03Z</date>
+			<key>plainText</key>
+			<string>// Hi-DPI (Retina) web typography
+@mixin retina($ratio: 1.5) {
+  $dpi: $ratio * 96;
+  $opera-ratio: $ratio * 100;
+ 
+  @media only screen and (-webkit-min-device-pixel-ratio: #{$ratio}),
+      only screen and ( -o-min-device-pixel-ratio: '#{$opera-ratio}/100'),
+      only screen and ( min-resolution: #{$dpi}dpi),
+      only screen and ( min-resolution: #{$ratio}dppx) {
+  @content;
+  }
+}
+
+/*
+// Usage example: 
+@import "retina";
+
+.body-text {
+  font-weight: normal;
+ 
+  @include retina {
+    font-weight: 300;
+  }
+}
+*/
+
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>ED8E722F-4E19-4AF0-BB83-63449CEA4879</string>
+		</dict>
+	</array>
+</dict>
+</plist>
