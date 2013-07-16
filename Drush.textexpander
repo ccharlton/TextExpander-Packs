@@ -13,6 +13,28 @@
 	<array>
 		<dict>
 			<key>abbreviation</key>
+			<string>drush:sa:new</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-07-16T23:22:08Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Generate quick Drush Site Alias file from current site</string>
+			<key>modificationDate</key>
+			<date>2013-07-16T23:22:08Z</date>
+			<key>plainText</key>
+			<string>drush --full --with-optional site-alias @self &gt;&gt; ~/.drush/%filltext:name=Site name:default=mysite%.alias.drushrc.php </string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>1B4A624F-2DFE-4618-B00B-C089B071CE71</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
 			<string>drush:flood:del</string>
 			<key>abbreviationMode</key>
 			<integer>1</integer>
