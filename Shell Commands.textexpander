@@ -13,6 +13,28 @@
 	<array>
 		<dict>
 			<key>abbreviation</key>
+			<string>ssh:key:deploy</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-07-15T21:50:37Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>SSH copy public key to remote server</string>
+			<key>modificationDate</key>
+			<date>2013-07-15T21:54:21Z</date>
+			<key>plainText</key>
+			<string>ssh-copy-id %fillpart:name=Specific public key:default=yes%-i ~/.ssh/id_rsa.pub%fillpartend% %filltext:name=Remote host%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>8CE1ECC0-9699-468B-8DB7-D0C4C6B5F396</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
 			<string>test:echo</string>
 			<key>abbreviationMode</key>
 			<integer>1</integer>
