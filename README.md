@@ -1,4 +1,6 @@
-# TextExpander snippet packs, perfect for developers.
+# TextExpander snippet packs for developers
+
+![](http://ccharlton.github.io/TextExpander-Packs/img/textexpander-packs.png)
 
 ## Packs available:
 * Apache
