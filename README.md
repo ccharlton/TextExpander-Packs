@@ -10,12 +10,12 @@ These snippet groups are perfect for developers. Each group is easy to add to [T
 * [Apache](https://raw.githubusercontent.com/ccharlton/TextExpander-Packs/master/Apache.textexpander)
 * [CSS](https://raw.githubusercontent.com/ccharlton/TextExpander-Packs/master/CSS.textexpander), [Sass](https://raw.githubusercontent.com/ccharlton/TextExpander-Packs/master/Sass.textexpander)
 * [Git](https://raw.githubusercontent.com/ccharlton/TextExpander-Packs/master/Git.textexpander), [SVN](https://raw.githubusercontent.com/ccharlton/TextExpander-Packs/master/Subversion%20\(SVN\).textexpander) (Subversion)
-* [Linux, Ubuntu](https://raw.githubusercontent.com/ccharlton/TextExpander-Packs/blob/master/Linux.textexpander), [CentOS](https://raw.githubusercontent.com/ccharlton/TextExpander-Packs/blob/master/CentOS.textexpander)
-* [MySQL](https://raw.githubusercontent.com/ccharlton/TextExpander-Packs/blob/master/MySQL.textexpander), [SQL](https://raw.githubusercontent.com/ccharlton/TextExpander-Packs/blob/master/SQL.textexpander)
-* [PHP](https://raw.githubusercontent.com/ccharlton/TextExpander-Packs/blob/master/PHP.textexpander)
-* [Ruby](https://raw.githubusercontent.com/ccharlton/TextExpander-Packs/blob/master/Ruby.textexpander)
+* [Linux, Ubuntu](https://raw.githubusercontent.com/ccharlton/TextExpander-Packs/master/Linux.textexpander), [CentOS](https://raw.githubusercontent.com/ccharlton/TextExpander-Packs/master/CentOS.textexpander)
+* [MySQL](https://raw.githubusercontent.com/ccharlton/TextExpander-Packs/master/MySQL.textexpander), [SQL](https://raw.githubusercontent.com/ccharlton/TextExpander-Packs/master/SQL.textexpander)
+* [PHP](https://raw.githubusercontent.com/ccharlton/TextExpander-Packs/master/PHP.textexpander)
+* [Ruby](https://raw.githubusercontent.com/ccharlton/TextExpander-Packs/master/Ruby.textexpander)
 * [Shell commands](https://raw.githubusercontent.com/ccharlton/TextExpander-Packs/master/Shell%20Commands.textexpander)
-* [Drush](https://raw.githubusercontent.com/ccharlton/TextExpander-Packs/blob/master/Drush.textexpander) (Drupal)
+* [Drush](https://raw.githubusercontent.com/ccharlton/TextExpander-Packs/master/Drush.textexpander) (Drupal)
 
 
 ## Links
