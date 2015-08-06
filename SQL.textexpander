@@ -18,8 +18,6 @@
 			<integer>1</integer>
 			<key>creationDate</key>
 			<date>2013-06-23T05:50:09Z</date>
-			<key>flags</key>
-			<integer>0</integer>
 			<key>label</key>
 			<string>Create new database</string>
 			<key>modificationDate</key>
@@ -28,10 +26,8 @@
 			<string>CREATE DATABASE %filltext:name=Database%;</string>
 			<key>snippetType</key>
 			<integer>0</integer>
-			<key>useCount</key>
-			<integer>0</integer>
 			<key>uuidString</key>
-			<string>79E312DD-59DC-4575-835E-70FBBD5C0DBB</string>
+			<string>70449749-01C2-45BE-8B12-D77F1FB46C5C</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -40,8 +36,6 @@
 			<integer>1</integer>
 			<key>creationDate</key>
 			<date>2013-06-23T05:48:37Z</date>
-			<key>flags</key>
-			<integer>0</integer>
 			<key>label</key>
 			<string>Delete database</string>
 			<key>modificationDate</key>
@@ -50,10 +44,55 @@
 			<string>DROP DATABASE %filltext:name=Database%;</string>
 			<key>snippetType</key>
 			<integer>0</integer>
-			<key>useCount</key>
+			<key>uuidString</key>
+			<string>00B87955-E1B0-4C5F-A152-16D179248021</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>db:size</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-06T18:46:02Z</date>
+			<key>label</key>
+			<string>Get size of all database tables (largest first)</string>
+			<key>modificationDate</key>
+			<date>2015-08-06T18:47:02Z</date>
+			<key>plainText</key>
+			<string>SELECT table_name AS "Tables", 
+round(((data_length + index_length) / 1024 / 1024), 2) "Size in MB" 
+FROM information_schema.TABLES 
+WHERE table_schema = "%filltext:name=Database name%"
+ORDER BY (data_length + index_length) DESC;</string>
+			<key>snippetType</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>D44CA697-D8A8-4DD6-B61E-4F93241200E9</string>
+			<string>761650F8-1417-4219-9EDF-4FD233405EBF</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>db:report</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-06T18:47:38Z</date>
+			<key>label</key>
+			<string>Get size and stats of all datatabases</string>
+			<key>modificationDate</key>
+			<date>2015-08-06T18:48:42Z</date>
+			<key>plainText</key>
+			<string>SELECT CONCAT(table_schema, '.', table_name) AS "DB/Table name",
+       CONCAT(ROUND(table_rows / 1000000, 2), 'M')                                    rows,
+       CONCAT(ROUND(data_length / ( 1024 * 1024 * 1024 ), 2), 'G')                    DATA,
+       CONCAT(ROUND(index_length / ( 1024 * 1024 * 1024 ), 2), 'G')                   idx,
+       CONCAT(ROUND(( data_length + index_length ) / ( 1024 * 1024 * 1024 ), 2), 'G') total_size,
+       ROUND(index_length / data_length, 2)                                           idxfrac
+FROM   information_schema.TABLES
+ORDER  BY data_length + index_length DESC;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>ACB68A56-C325-478D-BA36-A50F59B8438F</string>
 		</dict>
 	</array>
 </dict>
